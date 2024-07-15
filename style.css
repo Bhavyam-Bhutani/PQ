@@ -21,28 +21,31 @@ h1 {
     margin-bottom: 20px;
 }
 
-.question img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px;
-}
-
 .options {
-    text-align: center;
+    text-align: left;
 }
 
-.options button {
+.options label {
+    display: block;
+    margin: 5px 0;
+}
+
+button {
     background-color: #007bff;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    margin: 5px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
-.options button:hover {
+button:hover {
     background-color: #0056b3;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1em;
 }
 
 #result {
