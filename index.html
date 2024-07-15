@@ -10,32 +10,35 @@
     <div class="quiz-container">
         <h1>Phishing Quiz</h1>
         <div id="quiz">
-            <div class="question">
+            <div class="question" id="question1">
                 <h2>Question 1</h2>
-                <p>Is this email safe to click?</p>
-                <img src="email1.png" alt="Email Example 1">
+                <p>You receive an email from an unknown sender asking for your password. Is this safe?</p>
                 <div class="options">
-                    <button onclick="checkAnswer(1, true)">Yes</button>
-                    <button onclick="checkAnswer(1, false)">No</button>
+                    <label><input type="radio" name="q1" value="true"> Yes</label>
+                    <label><input type="radio" name="q1" value="false"> No</label>
                 </div>
+                <button onclick="submitAnswer(1)">Submit</button>
+                <div class="feedback" id="feedback1"></div>
             </div>
-            <div class="question">
+            <div class="question" id="question2">
                 <h2>Question 2</h2>
-                <p>Does this link look suspicious?</p>
-                <img src="link1.png" alt="Link Example 1">
+                <p>A website asks for your personal information after clicking a suspicious link. Should you provide it?</p>
                 <div class="options">
-                    <button onclick="checkAnswer(2, true)">Yes</button>
-                    <button onclick="checkAnswer(2, false)">No</button>
+                    <label><input type="radio" name="q2" value="true"> Yes</label>
+                    <label><input type="radio" name="q2" value="false"> No</label>
                 </div>
+                <button onclick="submitAnswer(2)">Submit</button>
+                <div class="feedback" id="feedback2"></div>
             </div>
-            <div class="question">
+            <div class="question" id="question3">
                 <h2>Question 3</h2>
-                <p>Is it safe to download this attachment?</p>
-                <img src="attachment1.png" alt="Attachment Example 1">
+                <p>You get a pop-up message saying you've won a prize and need to provide your credit card details to claim it. Is this safe?</p>
                 <div class="options">
-                    <button onclick="checkAnswer(3, true)">Yes</button>
-                    <button onclick="checkAnswer(3, false)">No</button>
+                    <label><input type="radio" name="q3" value="true"> Yes</label>
+                    <label><input type="radio" name="q3" value="false"> No</label>
                 </div>
+                <button onclick="submitAnswer(3)">Submit</button>
+                <div class="feedback" id="feedback3"></div>
             </div>
             <div id="result"></div>
         </div>
