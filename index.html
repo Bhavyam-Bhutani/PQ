@@ -3,16 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Security Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Phishing Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body bgcolor="cyan">
-    <h1>Cyber Security Quiz</h1>
-    <div id="quiz-container">
+<body>
+    <div class="quiz-container">
+        <h1>Phishing Quiz</h1>
+        <div id="quiz">
+            <div class="question">
+                <h2>Question 1</h2>
+                <p>Is this email safe to click?</p>
+                <img src="email1.png" alt="Email Example 1">
+                <div class="options">
+                    <button onclick="checkAnswer(1, true)">Yes</button>
+                    <button onclick="checkAnswer(1, false)">No</button>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 2</h2>
+                <p>Does this link look suspicious?</p>
+                <img src="link1.png" alt="Link Example 1">
+                <div class="options">
+                    <button onclick="checkAnswer(2, true)">Yes</button>
+                    <button onclick="checkAnswer(2, false)">No</button>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Question 3</h2>
+                <p>Is it safe to download this attachment?</p>
+                <img src="attachment1.png" alt="Attachment Example 1">
+                <div class="options">
+                    <button onclick="checkAnswer(3, true)">Yes</button>
+                    <button onclick="checkAnswer(3, false)">No</button>
+                </div>
+            </div>
+            <div id="result"></div>
         </div>
-    <button id="submit-button">Submit Quiz</button>
-    <p id="results"></p>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
